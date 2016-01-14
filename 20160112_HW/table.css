@@ -1,0 +1,22 @@
+    p{
+      color: red;
+      font-size: 66pt;
+      background-color: #434343;
+    }
+
+    th{
+		color: white;
+    	background-color:  #A42D00;
+    }
+
+    td0{
+    	background-color: pink;
+    }
+
+    td1{
+    	background-color: "#CC0000";
+    }
+
+    td2{
+    	background-color: "#F08080";
+    }
