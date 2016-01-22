@@ -1,0 +1,38 @@
+ul li {
+	float: left;
+	display: block;
+	background-color: #9A5927;
+	width: 150px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 14pt;
+}
+
+ul li a {
+	color: #F9F59A; /*調整文字顏色*/
+	text-decoration: none; /*不會有底線*/
+}
+
+ul li ul {
+	display: none;
+}
+
+ul li:hover ul {
+	display: block;
+}
+
+ul li:hover {
+	background-color:  #ba7947;
+}
+
+ul li ul li:hover {
+	background-color:  #F9F59A;
+}
+
+ul li ul li:hover a {
+	color:  #9A5927;
+}
+
+ul li ul a:hover {
+	color:  #9A5927;
+}
