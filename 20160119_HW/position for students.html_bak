@@ -14,10 +14,9 @@
     <link rel="stylesheet" type="text/css" href="css\cssreset.css">
     <link rel="stylesheet" type="text/css" href="css\pikachu.css">    
     <title>Ben</title>
-    <style type="text/css">
-        background-color: #FFFF77;
-    </style>
+
 </head>
+
 <body>
     <div class="wrap">
         <div class="circle1">
@@ -26,7 +25,7 @@
             Pikachu</h1>
         </div>
         <div class="circle2">
-            <table cellpadding="10">
+            <table>
                 <tr>
                     <td><img src="mail.png" width="20"></td>
                     <td>pikachu@qmail.com</td>
@@ -61,8 +60,7 @@
             <a href="https://www.facebook.com/pages/%E7%9A%AE%E5%8D%A1%E4%B8%98/104031079632855?fref=ts">
                 <img src="fb.png" width="30"></a>
         </div>
-        <div class="circle6">
-            <p>© 2023 by Pikachu. Proudly created by Celeste </p></div>
+        <div class="circle6">© 2023 by Pikachu. Proudly created by Celeste</div>
     </div>
 </body>
 
