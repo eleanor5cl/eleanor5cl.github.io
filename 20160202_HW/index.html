@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta:renderer></meta:renderer>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta:author></meta:author>
+    <meta name="keywords" content="Keyword 1,Keyword 2">
+    <meta name="description" content="description">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <title>Number Guessing 遊戲</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var answer = "1234";
+    var quessNum = "1428";
+    var aCount = 0;
+    var bCount = 0;
+
+    for (var i = 0; i < answer.length; i += 1) {
+        for (var j = 0; j < quessNum.length; j += 1) {
+            if (answer[i] === quessNum[j]) {
+                if (i === j) {
+                    aCount += 1;
+                } else {
+                    bCount += 1;
+                }
+            }
+        }
+
+    }
+
+    document.write(aCount + "A" + bCount + "B");
+
+
+    /*======================*/
+    if ... == .. {
+        if [..] == [...] {
+            aCount += 1;
+        } else {
+            bCount += 1;
+        }
+    }
+    </script>
+	<p id="NewString">請輸入請輸入四個數字(0-9)或英文字母(大小寫有區分)。</p>
+	<INPUT TYPE="TEXT" NAME="chkNum" SIZE=1 MAXLENGTH=1>
+	<INPUT TYPE="TEXT" NAME="chkNum" SIZE=1 MAXLENGTH=1>
+	<INPUT TYPE="TEXT" NAME="chkNum" SIZE=1 MAXLENGTH=1>
+	<INPUT TYPE="TEXT" NAME="chkNum" SIZE=1 MAXLENGTH=1><p/>
+
+	<input type="button" value="猜猜猜" onclick="checkString()">
+	<!-- <input type="button" value="重猜" onclick="restart()"> -->
+
+	<br><br><br><br><br>
+    <script type="text/javascript">
+    function ChangeString() {
+        var NewStringValue = document.getElementById("StringTextBox").value;
+        document.getElementById("NewStringBox").innerHTML = NewStringValue;
+        //document.write("您輸入的內容：" + NewStringBox );
+        
+    }
+    </script>
+    <p id="NewStringBox1">請輸入新的文字來改變這段文字</p>
+    <p id="NewStringBox"></p>
+    <input type="text" id="StringTextBox">
+    <input type="button" value="變更文字" onclick="ChangeString()">
+</body>
+
+</html>
