@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Jump for Joy</title>
+		<link rel="stylesheet" href="../css/my_style.css">
+	</head>
+	<body>
+		<div id="header">
+			<h2>Jump for Joy Sale</h2>
+		</div>
+		<header>歡樂跳躍大拍賣</header>
+		<div id="main">
+			<div class="guess_box"><img src="../img/jump1.jpg" alt="image A"/></div>
+			<div class="guess_box"><img src="../img/jump2.jpg" alt="image B"/></div>
+			<div class="guess_box"><img src="../img/jump3.jpg" alt="image C"/></div>
+			<div class="guess_box"><img src="../img/jump4.jpg" alt="image D"/></div>
+		</div>
+
+		<script src="../js/jquery-1.6.2.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".guess_box").click(function(){
+					// alert("你點擊了我");
+					$(".guess_box p").remove();
+					var my_num = Math.floor(Math.random()*5+5);
+					var discount = "<p> 你的折扣是" + my_num +" %</p>";
+					// alert(discount);
+					$(this).append(discount);
+				});
+
+			});
+
+		</script>
+		
+		<a href=" ../index.html "><img src="../img/back.gif" alt="圖片載入失敗 " weight="50px" height="50px"></a>
+	</body>
+</html>
