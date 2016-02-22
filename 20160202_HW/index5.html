@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta:renderer></meta:renderer>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta:author></meta:author>
+    <meta name="keywords" content="Keyword 1,Keyword 2">
+    <meta name="description" content="description">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <title>Number Guessing 遊戲</title>
+
+
+</head>
+
+<BODY>
+<script language="javascript" src="js/Guessing.js"></script>
+<Script>
+   initial()
+</Script>
+
+<!-- <FORM method=post name=forma>
+   <br><br>
+   <Input type="button" value="產生一組新的四位數字" onClick="generate()"> 
+   <p>
+   電腦產生的四位數字(均不相同)是：
+         <Input type=text  name="c_num" value="" size=10>
+          <br>
+   請輸入您猜測的四位數字：<Input type=text name="g_num" value=""
+          onFocus="this.select()"   maxlength=4 size=6> <br>
+      onFocus="this.select()" 當游標移入欄位中，會反白
+   <Input type="button" value="輸入完畢，送出"
+        onClick="calculate(this.form)"> <p>
+   您猜測的結果：<Input type=text name="result" value="" size=4> <br>
+   A 表示數字與位置均正確， B 表示數字正確而位置不對 <br>
+</FORM> -->
+
+
+    <FORM method=post name=forma>
+    <input type="button" value="產生一組新的四位數字" onClick="generate()"></input>
+    <p>電腦產生的四位數字是：</p>
+    <input type=text  name="c_num" value="" size=10>
+    <p id="" name = "c_num">您猜對了嗎？</p>
+
+    <input id="Text1" type="text" onClick="generate()"/>
+
+    <br><br>
+
+    <p id="NewString">請輸入請輸入四個數字(0-9)或英文字母(大小寫有區分)。</p>
+    <INPUT TYPE="TEXT" id = "text1" NAME="chkNum" SIZE=1 MAXLENGTH=1>
+    <INPUT TYPE="TEXT" id = "text2" NAME="chkNum" SIZE=1 MAXLENGTH=1>
+    <INPUT TYPE="TEXT" id = "text3" NAME="chkNum" SIZE=1 MAXLENGTH=1>
+    <INPUT TYPE="TEXT" id = "text4" NAME="chkNum" SIZE=1 MAXLENGTH=1><p/>
+
+    <input type="button" value="猜猜猜" onClick="calculate(this.form)"/>
+    <input type="button" value="重猜" onclick="Restart()"/>
+    <p id="Result">您猜對了嗎？</p>
+    </FORM> 
+
+    <br><br><br><br><br><br><br>
+</body>
+
+</html>
+
